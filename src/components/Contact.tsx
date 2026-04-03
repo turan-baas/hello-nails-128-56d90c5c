@@ -127,52 +127,18 @@ export default function Contact() {
             </form>
           </div>
 
-          {/* Right: Map placeholder */}
+          {/* Right: Google Maps */}
           <div className="reveal reveal-delay-1">
-            <div
-              className="relative w-full h-full min-h-[400px] rounded-2xl overflow-hidden border-2 border-accent/20"
-              style={{ background: "var(--color-primary)" }}
-            >
-              {/* Grid pattern */}
-              <div
-                className="absolute inset-0 opacity-[0.06]"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
-                  backgroundSize: "40px 40px",
-                }}
+            <div className="w-full h-full min-h-[400px] rounded-2xl overflow-hidden border-2 border-accent/20">
+              <iframe
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Hello+Nails+128,128+Rivington+St,New+York,NY+10002&zoom=16"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: "400px" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               />
-              {/* Map pin illustration */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="relative inline-block">
-                    <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center animate-pulse">
-                      <svg
-                        className="w-8 h-8 text-accent"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                      </svg>
-                    </div>
-                  </div>
-                  <p className="mt-4 text-white/60 text-sm">
-                    128 Rivington St
-                  </p>
-                  <p className="text-white/40 text-xs">
-                    Lower East Side, NYC
-                  </p>
-                </div>
-              </div>
-              {/* Bottom overlay */}
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/60 to-transparent">
-                <p className="text-white font-heading font-semibold text-lg">
-                  Hello Nails 128
-                </p>
-                <p className="text-white/60 text-sm mt-1">
-                  128 Rivington St, New York, NY 10002
-                </p>
-              </div>
             </div>
           </div>
         </div>
